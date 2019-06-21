@@ -547,8 +547,9 @@ public class ExcelUtils {
     }
 
     public static void main(String[] args) throws Exception {
-        String fileNameRead = "C:\\Users\\25047\\Desktop\\4-5月份.xls";
-        String fileNameWrite = "C:\\Users\\25047\\Desktop\\4-5汇总.xls";
+        String root = "C:\\Workspace\\projects\\tools-backend\\src\\main\\resources\\";
+        String fileNameRead = root + "excel\\4-5月份.xls";
+        String fileNameWrite = root + "excel\\4-5汇总.xls";
 
         readExcel(fileNameRead, null);
         System.out.println(DATA_MAP);
